@@ -1,0 +1,230 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;300;400;500;700&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+input:focus {
+  outline: none;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+#home-icon {
+  font-size: 2rem;
+}
+header {
+  background-image: linear-gradient(
+      to top,
+      rgba(22, 22, 22, 0.9),
+      rgba(32, 32, 32, 0.83)
+    ),
+    url("https://images.unsplash.com/photo-1628432136678-43ff9be34064?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1926&q=80");
+  background-position: 20% 15%;
+  background-size: cover;
+}
+.hero {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 6em 0;
+}
+
+.hero * {
+  margin: 0;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+.hero a {
+  font-size: 1.3rem;
+  font-weight: bold;
+  align-self: center;
+}
+
+.searchBar {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  border-radius: 10px;
+  margin-top: -1.5em;
+  display: flex;
+  width: 80%;
+  max-width: 600px;
+  height: 3em;
+  border: 1px solid darkgrey;
+  background: #fff;
+}
+label ion-icon {
+  font-size: 1.5rem;
+  margin-top: 0.5em;
+  color: darkgrey;
+  width: 10%;
+}
+
+#searchQuery {
+  font-size: 1.2rem;
+  border: none;
+  margin: 0;
+  width: 60%;
+}
+#searchBtn {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: rgb(82, 82, 82);
+  border: 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-left: 1px solid darkgray;
+  width: 30%;
+  overflow: hidden;
+}
+
+#searchBtn:hover {
+  cursor: pointer;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.temp {
+  margin-top: 3em;
+  font-size: 4rem;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#temp-explore {
+  font-size: 2rem;
+}
+.temp * {
+  color: darkgray;
+  margin: 0;
+  padding: 0;
+}
+
+.watchlist-btn {
+  font-size: 1rem;
+  border: none;
+  background-color: #fff;
+  color: black;
+}
+
+.movie-second-line .watchlist-btn {
+  display: flex;
+  align-items: center;
+}
+
+.watchlist-btn ion-icon {
+  margin-top: 0.2em;
+  font-size: 0.8rem;
+  background-color: black;
+  color: white;
+  border-radius: 7px;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2em;
+  align-items: center;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+.movie {
+  margin-top: 1.5em;
+  display: flex;
+  width: 80%;
+  max-width: 900px;
+  justify-content: center;
+  padding-bottom: 2em;
+  border-bottom: 1px solid darkgray;
+}
+
+.movie:last-child {
+  border: none;
+}
+
+.movie img {
+  width: 25%;
+  height: fit-content;
+}
+
+.movie-first-line,
+.movie-second-line,
+.movie-plot {
+  display: flex;
+}
+
+.movie-first-line p {
+  padding-top: 0.4em;
+}
+
+.movie-first-line p,
+.movie-second-line p:not(:first-child),
+.movie-second-line button {
+  display: inline;
+  margin-left: 1em;
+}
+
+.right-side {
+  padding-left: 2em;
+  width: 75%;
+}
+
+.movie-plot {
+  line-height: 1.5em;
+  color: rgb(80, 80, 80);
+}
+
+@media (max-width: 550px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+  .hero a {
+    font-size: 0.75rem;
+  }
+
+  label {
+    font-size: 0.7rem;
+  }
+  label ion-icon {
+    font-size: 1rem;
+    margin-top: 0.5em;
+    color: darkgrey;
+    width: 10%;
+  }
+  #searchQuery {
+    font-size: 1rem;
+  }
+  #searchBtn {
+    font-size: 1rem;
+  }
+  .watchlist-btn {
+    font-size: 0.7rem;
+  }
+  .right-side {
+    font-size: 0.8rem;
+  }
+}
