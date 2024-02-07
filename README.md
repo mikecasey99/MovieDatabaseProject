@@ -1,7 +1,7 @@
 # Movie Respository
 
-This project was built using vanilla JavaScript and is mobile responsive. Unfortunately, since I'm not using Node, I was not able to declare environment variables; therefore, you will have to obtain an API key yourself.
-
+This project was built using vanilla JavaScript and is mobile responsive. Unfortunately, since I'm not using Node, I was not able to declare environment variables; therefore, you will have to obtain an API key yourself. All movies are saved in localstorage.
+![](https://github.com/MovieDatabaseProject/Readme.gif)
 
 ## Installation
 
